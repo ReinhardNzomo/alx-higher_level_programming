@@ -13,5 +13,7 @@ else:
         print('1: {}'.format(list_arg[1]))
     
     else:
+        print('{} arguments:'.format(len(sys.argv) - 1))
         for x in range(len(sys.argv)):
-            print('{}: {}'.format(x, list_arg[x]))
+            if (x > 0):
+                print('{}: {}'.format(x, list_arg[x]))
