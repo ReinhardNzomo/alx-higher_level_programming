@@ -2,4 +2,5 @@
 def search_replace(my_list, search, replace):
     if not my_list:
         return None
-    return (value if value != search else replace for value in my_list)
+    copy = [val if val != search else replace for val in my_list]
+    return (copy)
