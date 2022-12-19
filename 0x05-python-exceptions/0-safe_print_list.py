@@ -1,12 +1,12 @@
 #!/usr/bin/python
 def safe_print_list(my_list=[], x=0):
-    count = 0
-    for i in range(x):
-        try:
-            print("{}".format(my_list[i]), end="")
-        except IndexError:
-            break
-        else:
-            count += 1
-    print()
-    return count
+    try:
+        counter = 0
+        for i in my_list:
+            if counter < x:
+                print("{}".format(i), end="")
+                counter += 1
+        print('')
+        return counter
+    except SyntaxError:
+        print("Error Syntax")
