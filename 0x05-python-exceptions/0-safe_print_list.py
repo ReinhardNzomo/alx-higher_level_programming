@@ -8,5 +8,5 @@ def safe_print_list(my_list=[], x=0):
                 counter += 1
         print('')
         return counter
-    except SyntaxError:
+    except IndexError:
         print("Error Syntax")
