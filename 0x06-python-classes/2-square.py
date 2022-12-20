@@ -5,7 +5,7 @@
 class Square():
     """class rep a square"""
 
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """Initialize class square
         Args:
             size (int): size of square
